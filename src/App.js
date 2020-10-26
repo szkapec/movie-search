@@ -12,7 +12,7 @@ import {
 function App() {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/" component={MoviesContainer} />
       <Route exact path="/search/:id" component={MoviesSearch} cos="HEH?" />
