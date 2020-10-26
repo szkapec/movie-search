@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #22254b;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #22254b;
+  padding:16px;
+  justify-content: flex-end;
+  
+}
+.search {
+  display: block;
+  margin: 0 auto;
+  font-family: inherit;
+  border: 2px solid #373b69;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 6px 12px;
+  color: white;
+}
+
+.search:focus{
+  outline: none;
+}
+header input {
+  width: 200px;
+}
+@media(min-width: 700px) {
+  header input {
+    width: 400px;
+  }
+}
+
+
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  position: relative;
+  border-radius: 3px;
+  background-color: #373b69;
+  box-shadow: 0 -3px 3px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 16px;
+  width: 250px;
+
+}
+
+.movie img {
+  width: 100%;
+  height: 350px;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: #22254b;
+  
+}
+a {
+  text-decoration: none;
+}
+.movie-info h3 {
+  margin: 0;
+  text-decoration: none;
+}
+
+.movie-over {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #373b69;
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  max-height: 100%; 
+  overflow: auto;
+  left:0;
+  right: 0;
+  transform: translateY(100%);
+  transition:  0.3s ease-in-out;
+}
+.movie-over button {
+  padding: 8px 15px;
+  border-radius: 2px;
+  background-color: #373b69;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
+
+.top {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.tag {
+  background-color: #22254b;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.tag.green {
+  color:green
+}
+.tag.orange {
+  color: orange;
+}
+.tag.red {
+  color: red;
+}
