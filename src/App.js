@@ -12,13 +12,13 @@ import {
 function App() {
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename='/'>
     <Switch>
       <Route exact path="/" component={MoviesContainer} />
       <Route exact path="/search/:id" component={MoviesSearch} cos="HEH?" />
       <Route component={Default} />
     </Switch>
-  </Router>
+  </HashRouter>
     
   );
 }
